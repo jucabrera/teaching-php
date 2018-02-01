@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<table class="table table-striped">
+<thead>
+<tr>
+<th scope="col">#</th>
+<th scope="col">ID</th>
+<th scope="col">Email</th>
+</tr>
+</thead>
+<tbody>
+
+<?php
+foreach ($lista as $indice =>$aluno)
+{
+	?>
+    <tr>
+      <th scope="row"><?php echo $indice;?></th>
+      <td><?php echo $aluno['id'];?></td>
+      <td><?php echo $aluno['email'];?></td>     
+    </tr>
+    <?php 	
+    	}
+    ?>
+   
+  </tbody>
+</table>
