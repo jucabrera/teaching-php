@@ -5,7 +5,7 @@ $alunos = [
 				'idade' => 25 
 		],
 		[ 
-				'nome' => "Jose",
+				'nome' => "José",
 				'idade' => 30 
 		],
 		[ 
@@ -17,12 +17,16 @@ $alunos = [
 				'idade' => 35 
 		] 
 ];
-// echo "<pre>";
-//  print_r($alunos);
-echo $alunos[1]['nome']."<br>";
-echo $alunos[3]['idade']."<br>";
+echo "<pre>";
+// print_r ( $alunos );
 
+echo $alunos[3]['idade']; //Idade da Ana
+echo "<br>";
+echo $alunos[1]['nome']; 
+
+echo "<br>";
 foreach ($alunos as $aluno){
-	echo "Nome: {$aluno['nome']} - Idade: {$aluno['idade']}<br>"; 
+// 	print_r(array_keys($aluno));
+	echo "Nome: ".$aluno['nome']." - Idade: ".$aluno['idade'];
+	echo "<br>";
 }
-
