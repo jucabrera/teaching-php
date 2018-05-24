@@ -11,13 +11,24 @@ $numeros = [
 		9,
 		10 
 ];
+echo "<pre>";
+print_r ( $numeros ); 
 
-$par = function ($numero) {
+$funcao_anonima = function ($numero) {
 	if ($numero % 2 == 0) {
-		return $numero;
+		return true;
 	}
 };
 
-$pares = array_filter($numeros,$par);
-echo "<pre>";
-print_r($pares);
+// var_dump($funcao_anonima);// Closure ou função anonima
+
+$array_filtrado = array_filter ( $numeros, $funcao_anonima );
+
+// Outro formato
+// $array_filtrado = array_filter ( $numeros, function ($numero) {
+// 	if ($numero % 2 == 0) {
+// 		return true;
+// 	}
+// } );
+
+print_r($array_filtrado);
