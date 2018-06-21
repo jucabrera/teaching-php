@@ -1,6 +1,6 @@
 <?php
-
-class apartamento{
+//https://github.com/jucabrera/teaching-php/
+class Apartamento{
 	public $quartos; // Propriedade ou atributo
 	
 	public function setarQuartos($quartos)
