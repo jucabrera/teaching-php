@@ -11,6 +11,7 @@ for($numero = 11; $numero <= 10; $numero ++) {
 	echo "$numero<br>";
 }
 	
+// $numero = 1;
 echo "<h6>DO WHILE</h6>";
 do{
 	echo "$numero<br>";
